@@ -1,33 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/lblmundo"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#E6F45D"
     tools:context=".MiPrimerAc">
 
     <EditText
-        android:id="@+id/lbldatos"
-        android:layout_width="229dp"
-        android:layout_height="71dp"
-        android:layout_marginStart="72dp"
-        android:layout_marginTop="184dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Hola Mundo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
         android:id="@+id/lbldatos2"
-        android:layout_width="229dp"
-        android:layout_height="71dp"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="40dp"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="278dp"
+        android:layout_height="121dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="99dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="671dp"
         android:ems="10"
         android:inputType="text"
         android:text="Hola Mundo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:textAllCaps="true"
+        android:textColor="@color/purple_700"
+        android:textSize="48sp"
+        android:textStyle="bold|italic" />
+</RelativeLayout>
