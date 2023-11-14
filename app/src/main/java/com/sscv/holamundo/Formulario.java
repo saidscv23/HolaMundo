@@ -22,14 +22,20 @@ public class Formulario extends AppCompatActivity {
         edApellidos = findViewById(R.id.txtapellidos);
         edCedula = findViewById(R.id.txtcedula);
         edDireccion = findViewById(R.id.txtdireccion);
-        btAceptar = findViewById(R.id.btn_Aceptar); // Asegúrate de que el ID sea el correcto
-
+        btAceptar = findViewById(R.id.btn_Aceptar); 
         btAceptar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String nombre = edNombres.getText().toString();
-                if (!nombre.isEmpty()) {
-                    Toast.makeText(Formulario.this, "Informacion Ingresada Correcta", Toast.LENGTH_LONG).show();
+                String apellidos = edApellidos.getText().toString();
+                String cedula = edCedula.getText().toString();
+                String direccion = edDireccion.getText().toString();
+
+                if (!nombre.isEmpty() && !apellidos.isEmpty() && !cedula.isEmpty() && !direccion.isEmpty()) {
+
+                    Toast.makeText(Formulario.this, "Información Ingresada Correcta", Toast.LENGTH_LONG).show();
+                } else {
+                    Toast.makeText(Formulario.this, "Por favor, complete todos los campos", Toast.LENGTH_LONG).show();
                 }
             }
         });
