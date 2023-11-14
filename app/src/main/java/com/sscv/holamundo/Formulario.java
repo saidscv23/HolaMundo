@@ -15,17 +15,19 @@ public class Formulario extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_formulario);
 
+        EditText edNombres, edApellidos, edCedula, edDireccion;
+        Button btAceptar;
 
-        EditText edNombres, edApellidos, edCedula,edDireccion;
-        Button btAceptar= null;
-        edNombres=findViewById(R.id.txtnombre);
-        edApellidos=findViewById(R.id.txtapellidos);
-        edCedula=findViewById(R.id.txtcedula);
-        edDireccion=findViewById(R.id.txtdireccion);
+        edNombres = findViewById(R.id.txtnombre);
+        edApellidos = findViewById(R.id.txtapellidos);
+        edCedula = findViewById(R.id.txtcedula);
+        edDireccion = findViewById(R.id.txtdireccion);
+        btAceptar = findViewById(R.id.btn_Aceptar); // Asegúrate de que el ID sea el correcto
+
         btAceptar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String nombre=edNombres.getText().toString();
+                String nombre = edNombres.getText().toString();
                 if (!nombre.isEmpty()) {
                     Toast.makeText(Formulario.this, "Informacion Ingresada Correcta", Toast.LENGTH_LONG).show();
                 }
