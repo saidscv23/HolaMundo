@@ -22,7 +22,7 @@ public class Formulario extends AppCompatActivity {
         edApellidos = findViewById(R.id.txtapellidos);
         edCedula = findViewById(R.id.txtcedula);
         edDireccion = findViewById(R.id.txtdireccion);
-        btAceptar = findViewById(R.id.btn_Aceptar); 
+        btAceptar = findViewById(R.id.btn_Aceptar);
         btAceptar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
