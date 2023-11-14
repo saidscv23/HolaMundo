@@ -8,14 +8,14 @@
     tools:context=".Formulario">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_Aceptar"
         android:layout_width="157dp"
         android:layout_height="68dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="138dp"
         android:layout_marginBottom="64dp"
-        android:text="Button" />
+        android:text="Aceptar" />
 
     <TextView
         android:id="@+id/textView8"
@@ -83,7 +83,7 @@
         android:textStyle="bold|italic" />
 
     <EditText
-        android:id="@+id/editTextText12"
+        android:id="@+id/txtnombre"
         android:layout_width="231dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -94,7 +94,7 @@
         android:textSize="24sp" />
 
     <EditText
-        android:id="@+id/editTextText13"
+        android:id="@+id/txtapellidos"
         android:layout_width="234dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -105,18 +105,18 @@
         android:textSize="24sp" />
 
     <EditText
-        android:id="@+id/editTextText16"
+        android:id="@+id/txtcedula"
         android:layout_width="226dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="34dp"
-        android:layout_marginBottom="334dp"
+        android:layout_marginBottom="337dp"
         android:ems="10"
         android:textSize="24sp" />
 
     <EditText
-        android:id="@+id/editTextText17"
+        android:id="@+id/txtdireccion"
         android:layout_width="232dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
